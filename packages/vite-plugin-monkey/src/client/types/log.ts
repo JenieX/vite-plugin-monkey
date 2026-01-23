@@ -1,6 +1,6 @@
 export interface GmLogType {
-  (message: any): void;
+  (...data: any[]): void;
 }
 export interface GmAsyncLogType {
-  (message: any): Promise<void> | void;
+  (...data: any[]): Promise<void> | void;
 }
